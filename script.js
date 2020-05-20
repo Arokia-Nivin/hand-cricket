@@ -82,19 +82,19 @@ function name()
 
 function toss()
 {
-	var tossnumber=Number(prompt("What's your call? 1 for Heads/ 2 for Tails"));
+	var tossnumber=Number(prompt("What's your call? 1 for Heads / 2 for Tails"));
 	while(tossnumber!=1 && tossnumber!=2)
 	{
-		tossnumber=Number(prompt("Sorry to ask you again. What's your call? 1 for Heads/ 2 for Tails"));
+		tossnumber=Number(prompt("Sorry to ask you again. What's your call? 1 for Heads / 2 for Tails"));
 	}
 	
 	var randomtossnumber=Math.floor(Math.random()*2 +1);
 	if (tossnumber==randomtossnumber)
 	{
-		select=Number(prompt("You have won the toss. What's your decision? 1 for Batting /2 for Bowling"));
+		select=Number(prompt("You have won the toss. What's your decision? 1 for Batting / 2 for Bowling"));
 		while(select!=1 && select!=2)
 		{
-			select=Number(prompt("Sorry to ask you again. What's your decision? 1 for Batting /2 for Bowling"));
+			select=Number(prompt("Sorry to ask you again. What's your decision? 1 for Batting / 2 for Bowling"));
 		}
 		if (select==1)
 		{
@@ -184,7 +184,15 @@ function bowling()
 				{
 					if (totalComputerScore<totalPlayerScore)
 					{
-						$(".message").text("You have won the match by "+(totalPlayerScore - totalComputerScore)+" runs.");
+						var diff=totalPlayerScore - totalComputerScore;
+						if (diff!=1)
+						{
+							$(".message").text("You have won the match by "+ diff +" runs.");
+						}
+						else
+						{
+							$(".message").text("You have won the match by "+ diff +" run.");
+						}
 					}
 					else if (totalComputerScore==totalPlayerScore)
 					{
