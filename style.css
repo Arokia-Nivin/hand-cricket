@@ -1,0 +1,134 @@
+
+html
+{
+	width:100%;
+	height:100%;
+}
+body
+{
+	margin:0;
+	background: #000428;
+	background: -webkit-linear-gradient(to right, #004e92, #000428); 
+	background: linear-gradient(to right, #004e92, #000428); 
+	font-family: 'Scada', sans-serif;
+
+}
+
+h1
+{
+	font-size:4rem;
+	margin:0;
+	text-align: center;
+	background-color: #12a5db;
+}
+p
+{
+	display: inline-block;
+	margin:0 15%;
+	font-size: 1.5rem;
+}
+.message
+{
+	margin: 0 10%;
+	padding-top:3px;
+	width:80%;
+	text-align:center;
+	color:white;
+	font-weight: none;
+
+}
+.playingsection
+{
+	margin:3vh auto;
+	max-width: 550px;
+	width:90%;
+}
+
+
+.player
+{
+	width:25%; 
+	height:25vh;
+	float:left;
+	margin:4.16%;
+	border-radius: 20px;
+	background-color: #edcd6d;
+	font-size:5rem;
+	border:none;
+	outline: none;
+	font-family: inherit;
+}
+.player:active
+{
+	font-size:6rem;
+
+}
+.player:hover
+{
+	border: 2px solid black;
+	transition: border 0.3s;
+}
+.active
+{
+	margin: 0 auto;
+	max-width:550px;
+	width:90%;
+	text-align: center;
+
+}
+.activebtn
+{
+	border:none;
+	outline: none;
+	font-family: inherit;
+	color:white;
+	background-color: white;
+}
+
+.colorchange
+{
+	background-color:#2de036;
+	color:#2de036;
+}
+.gameover
+{
+	background-color: red;
+	color: white;
+}
+
+
+.scoredisplay
+{
+	text-align: center;
+	background: #000428;
+	background: -webkit-linear-gradient(to right, #004e92, #000428); 
+	background: linear-gradient(to right, #004e92, #000428); 
+	color:white;
+}
+.flip
+{
+	transform: scaleX(-1);
+}
+.reset
+{
+	max-width: 550px;
+	width:80%;
+	text-align: center;
+	margin:1vh auto;
+}
+.resetbtn
+{
+	width:100px;
+	border: 1px solid #fc0303;
+	outline: none;
+	font-family: inherit;
+	background-color: #fc0303;
+	color:white;
+	font-weight: 100;
+
+}
+.resetbtn:hover
+{
+	width:120px;
+	transition: all 0.5s;
+}
